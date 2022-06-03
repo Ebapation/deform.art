@@ -1,19 +1,90 @@
 body {
 	background: rgb(67,67,67) ;
     background: linear-gradient(90deg, rgba(67,67,67,1) 0%, rgba(0,0,0,1) 250%);
-}
-.container {
-	display: flex;
+	margin: 0;
 }
 .navbar {
 	background: none;
-	display: grid;
-	grid-template-columns: 200px 200px 200px;
-}
-
-.bg-gradiets {
-	display: block;
-	padding: 0;
-	margin: 0;
 	width: 100%;
+	height: 100px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+.navbar-logo {
+	position: relative;
+	padding-left: 64px;
+	width: 207px;
+	height: 85px;
+	mix-blend-mode: screen;
+}
+.navbar-icons-container {
+	position: relative;
+	padding-right: 64px;
+	margin: 0;
+}
+.navbar-icons {
+	position: relative;
+	width: 40px;
+	height: 40px;
+	padding-left: 10px;
+	padding-right: 0px;
+}
+h3 {
+	color: rgb(255, 255, 255);
+	font-family: 'Anonymous Pro', monospace;
+	font-size: 40;
+	text-transform: uppercase;
+}
+.header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+.description-header {
+	display: flex;
+	flex-direction: column;
+	width: 980;
+	height: 480;
+	text-align: center;
+	align-items: center;
+	align-self: flex-start;
+	padding-top: 150px;
+	padding-left: 65px;
+
+}
+h4 {
+	color: rgb(255, 255, 255);
+	font-family: 'Anonymous Pro', monospace;
+	font-size: 40;
+	font-style: normal;
+	font-weight: 400;
+}
+.sign-up-buttons {
+	display: flex;
+	justify-content: center;
+}
+.log-in-button {
+	background: none;
+	color: rgb(255, 255, 255);
+	font-family: 'Anonymous Pro';
+	font-size: 32;
+	border: 0;
+}
+.sign-up-button {
+	color: rgb(255, 255, 255);
+	font-family: 'Anonymous Pro';
+	font-size: 32;
+	border: 0;
+	background-color: #434343;
+	width: 110px;
+	height: 27px;
+	border-radius: 15%;
+}
+.bg-ivan {
+	position: relative;
+	width: 50%;
+	align-self: flex-end;
 }
