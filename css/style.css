@@ -1,6 +1,6 @@
 body {
 	background: rgb(67,67,67) ;
-    background: linear-gradient(90deg, rgba(67,67,67,1) 0%, rgba(0,0,0,1) 250%);
+    background: linear-gradient(90deg, rgba(67,67,67,1) 0%, rgba(0,0,0,1) 200%);
 	margin: 0;
 }
 .navbar {
@@ -12,28 +12,60 @@ body {
 	justify-content: space-between;
 	align-items: center;
 }
-.navbar-logo {
+.navbar-logo-button {
 	position: relative;
+	border: 0;
 	padding-left: 64px;
+	mix-blend-mode: screen;
+	background-color: #000000;
+	transition-duration: 0.35s;
+}
+.navbar-logo {
 	width: 207px;
 	height: 85px;
-	mix-blend-mode: screen;
+}
+.navbar-logo-button:hover {
+	transform: scale(105%);
+	transform-style: ease-in;
+	transition-duration: 0.35s;
+}
+.navbar-button {
+	position: relative;
+	width: 110px;
+	height: 27px;
+	color: rgb(255, 255, 255);
+	font-family: 'Anonymous Pro', monospace;
+	font-size: large;
+	font-weight: bold;
+	text-transform: uppercase;
+	background: none;
+	border: 0;
+	transition-duration: 0.35s;
+}
+.navbar-button:hover {
+	transform: scale(115%);
+	transition-duration: 0.35s;
 }
 .navbar-icons-container {
+	display: flex;
+	flex-direction: row;
+	padding-right: 64px;
+}
+.navbar-icons-button {
 	position: relative;
+	mix-blend-mode: screen;
+	background-color: #000000;
+	transition-duration: 0.35s;
+}
+.navbar-icons-button:hover {
+	transform: scale(110%);
+	transition-duration: 0.35s;
 }
 .navbar-icons {
 	position: relative;
 	width: 40px;
 	height: 40px;
 	padding-left: 10px;
-	padding-right: 0px;
-}
-h3 {
-	color: rgb(255, 255, 255);
-	font-family: 'Anonymous Pro', monospace;
-	font-size: 40;
-	text-transform: uppercase;
 }
 .header {
 	display: flex;
@@ -60,7 +92,7 @@ h4 {
 	font-style: normal;
 	font-weight: 400;
 }
-.sign-up-buttons {
+.sign-up-container {
 	display: flex;
 	justify-content: center;
 }
@@ -70,6 +102,11 @@ h4 {
 	font-family: 'Anonymous Pro';
 	font-size: 32;
 	border: 0;
+	transition-duration: 0.35s;
+}
+.log-in-button:hover {
+	transform: scale(110%);
+	transition-duration: 0.35s;
 }
 .sign-up-button {
 	color: rgb(255, 255, 255);
@@ -80,6 +117,11 @@ h4 {
 	width: 110px;
 	height: 27px;
 	border-radius: 15%;
+	transition-duration: 0.35s;
+}
+.sign-up-button:hover {
+	transform: scale(110%);
+	transition-duration: 0.35s;
 }
 .bg-ivan {
 	position: relative;
