@@ -1,7 +1,12 @@
 body {
 	background: rgb(67,67,67) ;
-    background: linear-gradient(90deg, rgba(67,67,67,1) 0%, rgba(0,0,0,1) 200%);
+    background: linear-gradient(90deg, rgba(67,67,67,1) 0%, rgba(0,0,0,1) 130%);
 	margin: 0;
+}
+.gradients {
+	position: absolute;
+	width: 100%;
+	mix-blend-mode: overlay;
 }
 .navbar {
 	background: none;
@@ -68,22 +73,31 @@ body {
 	padding-left: 10px;
 }
 .header {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
+	overflow: hidden;
+}
+.bg-ivan {
+	position: relative;
+    overflow: hidden;
+}
+.bg-ivan:before {
+	position: absolute;
+	display: block;
+	background-size: contain;
+	top: 10%;
+	left: 0;
+	width: 65%;
+	padding-left: 50%;
+	z-index : 1;
 }
 .description-header {
+	position: relative;
 	display: flex;
 	flex-direction: column;
-	width: 980;
-	height: 480;
-	text-align: center;
 	align-items: center;
-	align-self: flex-start;
 	padding-top: 150px;
 	padding-left: 65px;
-
+	width: 50%;
+	z-index: 2;
 }
 h4 {
 	color: rgb(255, 255, 255);
@@ -91,10 +105,11 @@ h4 {
 	font-size: 40;
 	font-style: normal;
 	font-weight: 400;
+	text-align: center;
 }
 .sign-up-container {
-	display: flex;
-	justify-content: center;
+	display: block;
+	align-items: center;
 }
 .log-in-button {
 	background: none;
@@ -122,9 +137,4 @@ h4 {
 .sign-up-button:hover {
 	transform: scale(110%);
 	transition-duration: 0.35s;
-}
-.bg-ivan {
-	position: relative;
-	width: 50%;
-	align-self: flex-end;
 }
