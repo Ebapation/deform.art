@@ -70,7 +70,7 @@ body {
 	height: 40px;
 	padding-left: 10px;
 }
-.header {
+.contents {
 	position: relative;
 	overflow: clip;
 }
@@ -109,6 +109,8 @@ h4 {
 	color: rgb(255, 255, 255);
 	font-family: 'Anonymous Pro';
 	font-size: 1.25em;
+	font-weight: 200;
+	font-style: normal;
 	border: 0;
 	transition-duration: 0.35s;
 }
@@ -120,6 +122,8 @@ h4 {
 	color: rgb(255, 255, 255);
 	font-family: 'Anonymous Pro';
 	font-size: 1.25rem;
+	font-weight: 200;
+	font-style: normal;
 	border: 0;
 	background-color: #434343;
 	width: 130px;
@@ -131,23 +135,32 @@ h4 {
 	transform: scale(110%);
 	transition-duration: 0.35s;
 }
-.header-pseudoblock {
-	height: 12em;
-	z-index : 1;
+.cases-container {
+	position: static;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin: 0;
 }
 h1 {
-	position: relative;
+	position: absolute;
 	background:  -webkit-linear-gradient(#fac2ea, #a6c1ee);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	font-family: 'Rubik', sans-serif;
-	font-size: 8em;
+	font-size: 6em;
 	font-weight: 900;
 	z-index: 2;
-	text-align: center;
-	padding-top: 5rem;
-	padding-bottom: 0;
+	margin-top: 0;
 	margin-bottom: 0;
+	padding-bottom: 4em;
+}
+.svg-shape-cases {
+	padding-top: 12em;
+	margin-top: 0;
+	position: relative;
+	z-index: 1;	
 }
 h2 {
 	position: relative;
@@ -155,23 +168,26 @@ h2 {
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	font-family: 'Rubik Glitch', sans-serif;
-	font-size: 8em;
+	font-size: 6em;
 	font-weight: 400;
 	z-index: 2;
 	text-align: center;
 	padding-bottom: 0;
 	margin-bottom: 0;
 }
-.cases-container {
-	position: relative;
-	width: 100%;
-	overflow: clip;
+.reviews-container {
+	position: static;
 	display: flex;
 	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin: 0;
+	padding-top: 40em;
 }
-.svg-shape {
-	padding-top: 0;
-	margin-top: 0;
+.svg-shape-reviews {
+	padding-top: 12em;
+	margin-top: 18.5em;
 	position: relative;
-	z-index: 2;	
+	z-index: 1;	
+	transform: rotateY(180deg) rotateX(180deg);
 }
