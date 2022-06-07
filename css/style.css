@@ -169,11 +169,18 @@ h2 {
 	-webkit-text-fill-color: transparent;
 	font-family: 'Rubik Glitch', sans-serif;
 	font-size: 6em;
-	font-weight: 400;
-	z-index: 2;
 	text-align: center;
-	padding-bottom: 0;
-	margin-bottom: 0;
+	font-weight: 400;
+}
+.shop-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.shop-card {
+	background: #fac2ea;
+	width: 20rem;
+	height: 30rem;
 }
 .reviews-container {
 	position: static;
